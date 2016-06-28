@@ -1,0 +1,10 @@
+name 'HTSlib'
+maintainer 'Eagle Genomics Ltd'
+maintainer_email 'chef@eaglegenomics.com'
+license 'apache2'
+description 'Installs/Configures HTSlib'
+long_description 'Installs/Configures HTSlib'
+version '0.1.0'
+
+depends 'build-essential'
+depends 'magic_shell'

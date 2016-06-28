@@ -10,7 +10,6 @@ Requirements
 ## Platform:
 
 * Centos 6.5
-* RHEL 6.5
 
 Notes
 =====
