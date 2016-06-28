@@ -2,7 +2,7 @@
 
 Description
 ===========
-This Cookbook to installs HTSlib.
+This Cookbook to installs HTSlib, a C library for reading/writing high-throughput sequencing data.
 
 Requirements
 ============
