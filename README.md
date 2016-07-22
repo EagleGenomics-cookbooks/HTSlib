@@ -1,8 +1,8 @@
-# HTSlib
+# QUAST
 
 Description
 ===========
-This Cookbook to installs HTSlib, a C library for reading/writing high-throughput sequencing data.
+This Cookbook installs QUAST, a tool to evaluate genome assemblies by computing various metrics.
 
 Requirements
 ============
@@ -16,7 +16,7 @@ Notes
 
 Usage
 =====
-Simply include the recipe wherever you would like it installed, such as a run list (recipe[HTSlib]) or a cookbook (include_recipe 'HTSlib')
+Simply include the recipe wherever you would like it installed, such as a run list (recipe[QUAST]) or a cookbook (include_recipe 'QUAST')
 
 
 ## Testing
@@ -36,7 +36,7 @@ Attributes
 ==========
 See attributes/default.rb for default values.
 
-default['HTSlib']['version']
+default['QUAST']['version']
 
 License and Authors
 ===================
