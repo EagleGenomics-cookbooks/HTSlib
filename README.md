@@ -1,8 +1,8 @@
-# QUAST
+# HTSlib
 
 Description
 ===========
-This Cookbook installs QUAST, a tool to evaluate genome assemblies by computing various metrics.
+This Cookbook installs HTSlib, a tool to evaluate genome assemblies by computing various metrics.
 
 Requirements
 ============
@@ -16,7 +16,7 @@ Notes
 
 Usage
 =====
-Simply include the recipe wherever you would like it installed, such as a run list (recipe[QUAST]) or a cookbook (include_recipe 'QUAST')
+Simply include the recipe wherever you would like it installed, such as a run list (recipe[HTSlib]) or a cookbook (include_recipe 'HTSlib')
 
 
 ## Testing
@@ -36,7 +36,7 @@ Attributes
 ==========
 See attributes/default.rb for default values.
 
-default['QUAST']['version']
+default['HTSlib']['version']
 
 License and Authors
 ===================
