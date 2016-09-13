@@ -4,24 +4,22 @@
 #
 # Copyright (c) 2016 Eagle Genomics Ltd, Apache License, Version 2.0.
 
-package ['tar', 'zlib-devel'] do
+include_recipe 'apt' if platform?('debian', 'ubuntu')
+
+package ['tar'] do
   action :install
 end
 
+package 'zlib-devel' do
+  package_name case node['platform_family']
+               when 'rhel'
+                 'zlib-devel'
+               when 'debian'
+                 'zlib1g-dev'
+               end
+end
+
 include_recipe 'build-essential'
-
-# here for use by serverspec
-magic_shell_environment 'htslib_DIR' do
-  value node['htslib']['dir']
-end
-
-magic_shell_environment 'htslib_VERSION' do
-  value node['htslib']['version']
-end
-
-magic_shell_environment 'htslib_INSTALL' do
-  value node['htslib']['install_path']
-end
 
 remote_file "#{Chef::Config[:file_cache_path]}/#{node['htslib']['filename']}" do
   source node['htslib']['url']
