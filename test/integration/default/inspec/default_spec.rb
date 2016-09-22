@@ -10,10 +10,10 @@ describe file('/usr/local/htslib-1.3.1/htslib') do
   it { should be_directory }
 end
 
-describe command('which htsfile') do
+describe command('. /etc/profile; which htsfile') do
   its('exit_status') { should eq 0 }
 end
 
-describe command('htsfile --version') do
+describe command('. /etc/profile; htsfile --version') do
   its('stdout') { should match(/1.3.1/) }
 end
