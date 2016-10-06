@@ -41,6 +41,10 @@ bash 'install htslib' do
   not_if { ::File.exist?("#{node['htslib']['dir']}/htsfile") }
 end
 
+magic_shell_environment 'HTSLIB_DIR' do
+  value node['htslib']['dir']
+end
+
 # this symlinks every executable in the install subdirectory to the top of the directory tree
 # so that they are in the PATH
 execute "find #{node['htslib']['dir']} -maxdepth 1 -name 'htslib' -executable -type f -exec ln -sf {} . \\;" do
