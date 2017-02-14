@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/EagleGenomics-cookbooks/HTSlib.svg?branch=master)](https://travis-ci.org/EagleGenomics-cookbooks/HTSlib)
+
 # HTSlib
 
 Description
@@ -45,7 +47,7 @@ License and Authors
 * Authors:: Nick James  (<chef@eaglegenomics.com>)
 
 Copyright:: 2016, Eagle Genomics Ltd
-    
+
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
