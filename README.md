@@ -11,7 +11,8 @@ Requirements
 
 ## Platform:
 
-* Centos 6.5
+* Ubuntu 14.4
+* Centos 6.6
 
 Notes
 =====
