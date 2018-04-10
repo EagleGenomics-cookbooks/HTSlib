@@ -8,7 +8,7 @@ provisioner:
 
 verifier:
   name: inspec
-  format: doc
+  reporter: doc
 
 platforms:
   - name: ubuntu-14.04
