@@ -13,9 +13,9 @@ end
 package 'zlib-devel' do
   package_name case node['platform_family']
                when 'rhel'
-                 'zlib-devel'
+                 ['zlib-devel', 'bzip2-devel', 'xz-devel']
                when 'debian'
-                 'zlib1g-dev'
+                 ['zlib1g-dev', 'libbz2-dev', 'liblzma-dev']
                end
 end
 
@@ -34,7 +34,7 @@ end
 bash 'install htslib' do
   cwd node['htslib']['dir']
   code <<-EOH
-    ./configure
+    ./configure CFLAGS="-g -Wall -O2 -fPIC"
     make
     make install
   EOH
