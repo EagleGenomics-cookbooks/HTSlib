@@ -6,7 +6,7 @@ description 'Installs/Configures HTSlib'
 long_description 'Installs/Configures HTSlib'
 source_url 'https://github.com/EagleGenomics-cookbooks/HTSlib'
 issues_url 'https://github.com/EagleGenomics-cookbooks/HTSlib/issues'
-version '1.0.5'
+version '1.0.6'
 
 depends 'apt'
 depends 'build-essential'
