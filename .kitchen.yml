@@ -1,21 +1,16 @@
----
 driver:
   name: docker
   use_sudo: false
-
 provisioner:
   name: chef_zero
-
 verifier:
   name: inspec
   reporter: doc
-
 platforms:
-  - name: ubuntu-14.04
-  - name: centos-6.6
-
+- name: ubuntu-14.04
+- name: centos-6.6
 suites:
-  - name: default
-    run_list:
-      - recipe[HTSlib::default]
-    attributes:
+- name: default
+  run_list:
+  - recipe[HTSlib::default]
+  attributes:
